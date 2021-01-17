@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 58쪽 1번 문제 
+        var price1 = 3000;
+        var price2 = 6000;
+        var price3 = 3000;
+
+        var day_money = 10000;
+        var result = day_money - (price1 + price2 + price3);
+        result = result >= 0 ? '돈 관리 잘했어요!' : -result + '원 초과';
+        document.write(result, '<br>');
+
+        // 2번 문제 
+        var sell1 = 1200;
+        var sell2 = 1300;
+        var sell3 = 1000;
+        var sell4 = prompt('4분기 판매량을 입력하세요', '0');
+
+        var sellAverage = (sell1 + sell2 + sell3 + Number(sell4)) / 4;
+        result = sellAverage <= sell4 ? '판매량이 평균입니다.' : '판매량이 평균 미달입니다.';
+        document.write(result); 
+    </script>
+</body>
+</html>
