@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var animal = ['cat', 'dog', 'horse'];
+        var color = ['red', 'blue', 'green'];
+
+        animal.splice(2, 1, 'tiger', 'lion');
+        console.log(animal);
+
+        var data1 = color.pop();
+        var data2 = color.shift();
+        console.log(color);
+        color.push(data2);
+        console.log(color);
+
+        color.unshift(data1);
+        console.log(color);
+    </script>
+</body>
+</html>
